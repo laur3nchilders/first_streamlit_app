@@ -30,7 +30,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('Thanks for adding ', add_my_fruit)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 # take the json version of the response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
