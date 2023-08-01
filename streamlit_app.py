@@ -1,9 +1,8 @@
 import streamlit
-# import pandas
-# import requests
+import pandas
+import requests
 import snowflake.connector
-import urllib.error
-import URLError # for control flow changes
+from urllib.error import URLError # for control flow changes
 
 streamlit.title('My Parents New Healthy Diner')
 
